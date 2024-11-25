@@ -1,0 +1,82 @@
+{
+  "name": "TorrentFreak",
+  "home-page": "https://torrentfreak.com",
+  "category": [
+    "News",
+    "Technology/Internet"
+  ],
+  "categories": {
+    "extractor": "css",
+    "locator": [
+      ".menu__link"
+    ],
+    "include": {},
+    "exclude": [
+      "Contact",
+      "Subscribe"
+    ]
+  },
+  "category-url": "{home-page}/{category}/page/{page}",
+  "supports-custom-category": true,
+  "category-articles": {
+    "extractor": "css",
+    "locators": {
+      "container": ".preview-article",
+      "title": ".preview-article__title",
+      "excerpt": "",
+      "author": ".preview-article__published span",
+      "thumbnail": "img",
+      "url": "a",
+      "time": ".preview-article__published time",
+      "tags": [],
+      "category": ".preview-article__category",
+      "content": []
+    },
+    "timezone": "",
+    "date-format": "MMMM d, yyyy, HH:mm",
+    "modifications": []
+  },
+  "search-url": "{home-page}/page/{page}/?s={query}",
+  "search-articles": {
+    "extractor": "css",
+    "locators": {
+      "container": ".preview-article",
+      "title": ".preview-article__title",
+      "excerpt": "",
+      "author": ".preview-article__published span",
+      "thumbnail": "img",
+      "url": "a",
+      "time": ".preview-article__published time",
+      "tags": [],
+      "category": ".preview-article__category",
+      "content": []
+    },
+    "timezone": "",
+    "date-format": "MMMM d, yyyy, HH:mm",
+    "modifications": []
+  },
+  "article": {
+    "extractor": "css",
+    "locators": {
+      "container": "main",
+      "title": "",
+      "excerpt": ".article__excerpt",
+      "author": "",
+      "thumbnail": "section[style]",
+      "url": "",
+      "time": ".hero__published time",
+      "tags": [
+        ".category"
+      ],
+      "category": ".category",
+      "content": [
+        ".article__body"
+      ]
+    },
+    "timezone": "",
+    "date-format": "MMMM d, yyyy, HH:mm",
+    "modifications": []
+  },
+  "ads": [],
+  "headers": {}
+}

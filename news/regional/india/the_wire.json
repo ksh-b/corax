@@ -1,0 +1,91 @@
+{
+  "name": "The Wire",
+  "home-page": "https://thewire.in",
+  "category": [
+    "News",
+    "India",
+    "Politics"
+  ],
+  "categories": {
+    "extractor": "json",
+    "locator": [],
+    "include": {
+      "Politics": "politics",
+      "Economy": "economy",
+      "World": "world",
+      "Security": "security",
+      "Law": "law",
+      "Science": "science",
+      "Society": "society",
+      "Culture": "culture"
+    },
+    "exclude": []
+  },
+  "category-url": "https://cms.thewire.in/wp-json/thewire/v2/posts/category/{category}/recent-stories/?per_page=10&page={page}",
+  "supports-custom-category": true,
+  "category-articles": {
+    "extractor": "json",
+    "locators": {
+      "container": "$.*",
+      "title": "post_title",
+      "excerpt": "post_excerpt",
+      "author": "post_author_name[0].author_name",
+      "thumbnail": "hero_image[0]",
+      "url": "post_name",
+      "time": "post_date_gmt",
+      "tags": [
+        "categories[*].name"
+      ],
+      "category": "prime_category[0].name",
+      "content": []
+    },
+    "timezone": "Asia/Kolkata",
+    "date-format": "yyyy-MM-dd HH:mm:ss",
+    "modifications": []
+  },
+  "search-url": "https://cms.thewire.in/wp-json/thewire/v2/posts/search?keyword={query}&orderby=rel&per_page=10&page={page}",
+  "search-articles": {
+    "extractor": "json",
+    "locators": {
+      "container": "$.*",
+      "title": "post_title",
+      "excerpt": "post_excerpt",
+      "author": "post_author_name[0].author_name",
+      "thumbnail": "hero_image[0]",
+      "url": "post_name",
+      "time": "post_date_gmt",
+      "tags": [
+        "categories[*].name"
+      ],
+      "category": "prime_category[0].name",
+      "content": []
+    },
+    "timezone": "Asia/Kolkata",
+    "date-format": "yyyy-MM-dd HH:mm:ss",
+    "modifications": []
+  },
+  "article": {
+    "extractor": "json",
+    "locators": {
+      "container": "https://cms.thewire.in/wp-json/thewire/v2/posts/detail/{url}/",
+      "title": "",
+      "excerpt": "",
+      "author": "",
+      "thumbnail": "",
+      "url": "https://thewire.in/{category}/{url}/",
+      "time": "",
+      "tags": [],
+      "category": "",
+      "content": [
+        "$..post_content"
+      ]
+    },
+    "timezone": "",
+    "date-format": "",
+    "modifications": []
+  },
+  "ads": [
+    "ins"
+  ],
+  "headers": {}
+}

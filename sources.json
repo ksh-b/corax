@@ -1,0 +1,75 @@
+{
+  "name": "Corax",
+  "description": "Raven's official extractors",
+  "update-notes": [],
+  "sources": [
+    {
+      "name": "Reuters",
+      "file": "news/world/reuters.json",
+      "category": "News",
+      "region": "World",
+      "language": "English",
+      "tags": [],
+      "other-versions": []
+    },
+    {
+      "name": "CNN",
+      "file": "news/world/cnn.json",
+      "category": "News",
+      "region": "World",
+      "language": "English",
+      "tags": [],
+      "other-versions": []
+    },
+    {
+      "name": "AP News",
+      "file": "news/world/ap_news.json",
+      "category": "News",
+      "region": "World",
+      "language": "English",
+      "tags": [],
+      "other-versions": []
+    },
+    {
+      "name": "BBC",
+      "file": "news/world/bbc.json",
+      "category": "News",
+      "region": "World",
+      "language": "English",
+      "tags": [],
+      "other-versions": []
+    },
+    {
+      "name": "TorrentFreak",
+      "file": "news/technology/torrentfreak.json",
+      "category": "News",
+      "region": "World",
+      "language": "English",
+      "tags": [
+        "Technology/Internet"
+      ],
+      "other-versions": []
+    },
+    {
+      "name": "The Wire",
+      "file": "news/regional/india/the_wire.json",
+      "category": "News",
+      "region": "India",
+      "language": "English",
+      "tags": [
+        "Politics"
+      ],
+      "other-versions": []
+    },
+    {
+      "name": "Al Jazeera",
+      "file": "news/world/al_jazeera.json",
+      "category": "News",
+      "region": "World",
+      "language": "English",
+      "tags": [],
+      "other-versions": []
+    }
+  ]
+}
+
