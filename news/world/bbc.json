@@ -20,7 +20,7 @@
     },
     "exclude": []
   },
-  "category-url": "https://web-cdn.api.bbci.co.uk/xd/content-collection/27d91e93-c35c-4e30-87bf-1bd443496470?country=in&page={page}&size=9",
+  "category-url": "https://web-cdn.api.bbci.co.uk/xd/content-collection/{category}?country=in&page={page}&size=9",
   "supports-custom-category": false,
   "category-articles": {
     "extractor": "json",
