@@ -1,7 +1,7 @@
 {
   "name": "Corax",
   "description": "Raven's official extractors",
-  "update-notes": [],
+  "changelog": "CHANGELOG.md",
   "sources": [
     {
       "name": "Reuters",
