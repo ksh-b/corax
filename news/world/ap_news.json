@@ -1,6 +1,7 @@
 {
   "name": "AP News",
   "home-page": "https://apnews.com",
+  "icon-url": "https://apnews.com/favicon.ico",
   "category": [
     "News",
     "World"

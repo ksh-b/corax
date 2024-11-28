@@ -1,9 +1,12 @@
 {
   "name": "TorrentFreak",
   "home-page": "https://torrentfreak.com",
+  "icon-url": "https://torrentfreak.com/favicon.ico",
   "category": [
     "News",
-    "Technology/Internet"
+    "World",
+    "Technology",
+    "Internet"
   ],
   "categories": {
     "extractor": "css",

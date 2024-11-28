@@ -1,6 +1,8 @@
 {
   "name": "Reuters",
   "home-page": "https://www.reuters.com",
+  "icon-url": "https://www.reuters.com/favicon.ico",
+  "language": "English",
   "category": [
     "News",
     "World"

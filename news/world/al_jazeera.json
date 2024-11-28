@@ -1,6 +1,7 @@
 {
   "name": "Al Jazeera",
-  "home-page": "https://www.aljazeera.com/",
+  "home-page": "https://www.aljazeera.com",
+  "icon-url": "https://www.aljazeera.com/favicon_aje.ico",
   "category": [
     "News",
     "World"

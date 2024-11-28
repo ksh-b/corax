@@ -1,6 +1,7 @@
 {
   "name": "CNN",
   "home-page": "https://edition.cnn.com",
+  "icon-url": "https://edition.cnn.com/media/sites/cnn/favicon.ico",
   "category": [
     "News",
     "World"
