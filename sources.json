@@ -31,7 +31,12 @@
     {
       "name": "The Wire",
       "file": "news/regional/india/the_wire.json",
-      "other-versions": []
+      "other-versions": [
+        {
+          "name": "The Wire Hindi",
+          "file": "news/regional/india/the_wire_hindi.json"
+        }
+      ]
     },
     {
       "name": "Al Jazeera",

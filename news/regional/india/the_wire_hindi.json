@@ -1,0 +1,87 @@
+{
+  "name": "The Wire Hindi",
+  "home-page": "https://thewirehindi.com/",
+  "icon-url": "https://thewirehindi.com/wp-content/uploads/2023/05/cropped-The-wire-32x32.jpeg",
+  "category": [
+    "Hindi",
+    "News",
+    "India",
+    "Politics"
+  ],
+  "categories": {
+    "extractor": "json",
+    "locator": [],
+    "include": {
+      "भारत": "भारत",
+      "विचार": "विचार",
+      "राजनीति": "राजनीति",
+      "दुनिया": "दुनिया",
+      "कला-साहित्य": "कला-साहित्य",
+      "वीडियो": "वीडियो",
+      "विज्ञान": "विज्ञान",
+      "सपोर्ट": "सपोर्ट"
+    },
+    "exclude": []
+  },
+  "category-url": "https://thewirehindi.com/category/{category}/page/{page}/",
+  "supports-custom-category": true,
+  "category-articles": {
+    "extractor": "css",
+    "locators": {
+      "container": "article",
+      "title": "h2 a",
+      "excerpt": "p",
+      "author": "",
+      "thumbnail": "img",
+      "url": "h2 a",
+      "time": "time",
+      "tags": [],
+      "category": "",
+      "content": []
+    },
+    "timezone": "",
+    "date-format": "dd/MM/yyyy",
+    "modifications": []
+  },
+  "search-url": "https://thewirehindi.com/page/{page}/?s={query}",
+  "search-articles": {
+    "extractor": "css",
+    "locators": {
+      "container": "article",
+      "title": "h2 a",
+      "excerpt": "p",
+      "author": "",
+      "thumbnail": "img",
+      "url": "h2 a",
+      "time": "time",
+      "tags": [],
+      "category": "",
+      "content": []
+    },
+    "timezone": "",
+    "date-format": "dd/MM/yyyy",
+    "modifications": []
+  },
+  "article": {
+    "extractor": "css",
+    "locators": {
+      "container": "article",
+      "title": "",
+      "excerpt": "",
+      "author": "a[rel=author]",
+      "thumbnail": "",
+      "url": "",
+      "time": "",
+      "tags": [],
+      "category": "",
+      "content": [
+        "#primary"
+      ]
+    },
+    "timezone": "",
+    "date-format": "dd/MM/yyyy",
+    "modifications": []
+  },
+  "ads": [],
+  "headers": {}
+}
