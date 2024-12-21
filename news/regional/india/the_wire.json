@@ -3,6 +3,7 @@
   "home-page": "https://thewire.in",
   "icon-url": "https://cms.thewire.in/favicon.ico",
   "category": [
+    "English",
     "News",
     "India",
     "Politics"
@@ -78,7 +79,7 @@
       "tags": [],
       "category": "",
       "content": [
-        "$..post_content"
+        "$..post_content[0].post_content"
       ]
     },
     "timezone": "",
