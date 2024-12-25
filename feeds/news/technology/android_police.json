@@ -1,0 +1,87 @@
+{
+  "name": "Android Police",
+  "home-page": "https://www.androidpolice.com",
+  "icon-url": "https://www.androidpolice.com/public/build/images/favicon-48x48.52dff51b.png",
+  "category": [
+    "English",
+    "News",
+    "Technology",
+    "Internet"
+  ],
+  "categories": {
+    "extractor": "css",
+    "locator": [
+      ".sidenav-link"
+    ],
+    "include": {},
+    "exclude": [
+      "Sign in",
+      "Newsletter"
+    ]
+  },
+  "category-url": "{home-page}/tag/{category}/{page}",
+  "supports-custom-category": true,
+  "category-articles": {
+    "extractor": "css",
+    "locators": {
+      "container": ".listing-content .article",
+      "title": ".display-card-title",
+      "excerpt": ".display-card-excerpt",
+      "author": ".display-card-author",
+      "thumbnail": "picture img",
+      "url": ".display-card-title a",
+      "time": ".display-card-date ",
+      "tags": [".listing-title"],
+      "category": ".preview-article__category",
+      "content": [
+        ".display-card-firstParagraph"
+      ]
+    },
+    "timezone": "",
+    "date-format": "ISO 8601",
+    "modifications": []
+  },
+  "search-url": "{home-page}/search/?q={query}&page={page}",
+  "search-articles": {
+    "extractor": "css",
+    "locators": {
+      "container": ".listing-content .article",
+      "title": ".display-card-title",
+      "excerpt": ".display-card-excerpt",
+      "author": ".display-card-author",
+      "thumbnail": "picture img",
+      "url": ".display-card-title a",
+      "time": ".display-card-date",
+      "tags": [".listing-title"],
+      "category": ".preview-article__category",
+      "content": []
+    },
+    "timezone": "",
+    "date-format": "ISO 8601",
+    "modifications": []
+  },
+  "article": {
+    "extractor": "css",
+    "locators": {
+      "container": "article",
+      "title": "",
+      "excerpt": "",
+      "author": "",
+      "thumbnail": "",
+      "url": "",
+      "time": "",
+      "tags": [],
+      "category": "",
+      "content": [
+        ".article-body"
+      ]
+    },
+    "timezone": "",
+    "date-format": "ISO 8601",
+    "modifications": []
+  },
+  "ads": [
+    ".no-badge.small"
+  ],
+  "headers": {}
+}

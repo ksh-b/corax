@@ -1,8 +1,9 @@
 {
-  "name": "AP News",
-  "home-page": "https://apnews.com",
-  "icon-url": "https://apnews.com/favicon.ico",
+  "name": "CNN",
+  "home-page": "https://edition.cnn.com",
+  "icon-url": "https://edition.cnn.com/media/sites/cnn/favicon.ico",
   "category": [
+    "English",
     "News",
     "World"
   ],
@@ -11,19 +12,19 @@
     "locator": [
       ".Page-header-navigation .AnClick-MainNav"
     ],
-    "include": {},
+    "include": {
+      "US": "us",
+      "World": "world",
+      "Politics": "politics",
+      "Business": "business",
+      "Opinion": "opinion",
+      "Health": "health",
+      "Entertainment": "entertainment",
+      "Style": "style",
+      "Travel": "travel",
+      "Sports": "sports"
+    },
     "exclude": [
-      "Election 2024",
-      "Fact Check",
-      "Oddities",
-      "Newsletters",
-      "Video",
-      "Photography ",
-      "AP Buyline Personal Finance",
-      "AP Buyline Shopping",
-      "Press Releases",
-      "Press Releases",
-      "My Account"
     ]
   },
   "category-url": "{home-page}/{category}",
@@ -31,9 +32,9 @@
   "category-articles": {
     "extractor": "css",
     "locators": {
-      "container": ".PageListStandardH .PagePromo",
-      "title": ".PagePromo-title",
-      "excerpt": ".PagePromo-description",
+      "container": ".layout--wide-left-balanced-2 .container__item",
+      "title": ".container__headline-text",
+      "excerpt": "",
       "author": "",
       "thumbnail": "img",
       "url": "a",
@@ -46,24 +47,25 @@
     "date-format": "",
     "modifications": []
   },
-  "search-url": "{home-page}/search?q={query}&p={page}",
+  "search-url": "https://search.prod.di.api.cnn.io/content?q={query}&size={size}&from={offset}&page={page}&sort=newest&request_id=0",
   "search-articles": {
-    "extractor": "css",
+    "extractor": "json",
     "locators": {
-      "container": ".SearchResultsModule-results .PagePromo",
-      "title": ".PagePromo-title",
-      "excerpt": ".PagePromo-description",
+      "container": "$.result.*",
+      "title": "headline",
+      "excerpt": "body",
       "author": "",
-      "thumbnail": "img",
-      "url": "a",
-      "time": "bsp-timestamp",
+      "thumbnail": "thumbnail",
+      "url": "url",
+      "time": "lastModifiedDate",
       "tags": [],
       "category": "",
       "content": []
     },
     "timezone": "",
-    "date-format": "Unix Epoch",
-    "modifications": []
+    "date-format": "ISO 8601",
+    "modifications": [
+    ]
   },
   "article": {
     "extractor": "css",
@@ -85,9 +87,10 @@
         ".VideoPage-pageSubHeading"
       ]
     },
-    "timezone": "",
-    "date-format": "",
-    "modifications": []
+    "timezone": "EDT",
+    "date-format": "h:mm a, EEE MMMM dd, yyyy",
+    "modifications": [
+    ]
   },
   "ads": [
     "div[data-component='links-block']",

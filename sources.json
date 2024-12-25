@@ -2,46 +2,52 @@
   "name": "Corax",
   "description": "Raven's official extractors",
   "changelog": "CHANGELOG.md",
-  "sources": [
+  "feeds": [
     {
       "name": "Reuters",
-      "file": "news/world/reuters.json",
+      "file": "feeds/news/world/reuters.json",
       "other-versions": []
     },
     {
       "name": "CNN",
-      "file": "news/world/cnn.json",
+      "file": "feeds/news/world/cnn.json",
       "other-versions": []
     },
     {
       "name": "AP News",
-      "file": "news/world/ap_news.json",
+      "file": "feeds/news/world/ap_news.json",
       "other-versions": []
     },
     {
       "name": "BBC",
-      "file": "news/world/bbc.json",
+      "file": "feeds/news/world/bbc.json",
       "other-versions": []
     },
     {
       "name": "TorrentFreak",
-      "file": "news/technology/torrentfreak.json",
+      "file": "feeds/news/technology/torrentfreak.json",
       "other-versions": []
     },
     {
       "name": "The Wire",
-      "file": "news/regional/india/the_wire.json",
+      "file": "feeds/news/regional/india/the_wire.json",
       "other-versions": [
         {
           "name": "The Wire Hindi",
-          "file": "news/regional/india/the_wire_hindi.json"
+          "file": "feeds/news/regional/india/the_wire_hindi.json"
         }
       ]
     },
     {
       "name": "Al Jazeera",
-      "file": "news/world/al_jazeera.json",
+      "file": "feeds/news/world/al_jazeera.json",
       "other-versions": []
+    }
+  ],
+  "watches": [
+    {
+      "name": "timeanddate",
+      "file": "watches/weather/timeanddate.json"
     }
   ]
 }
