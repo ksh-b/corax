@@ -1,0 +1,29 @@
+{
+  "name": "timeanddate",
+  "description": "Hourly forecast",
+  "category": "Weather",
+  "url": "https://www.timeanddate.com/weather/india/kolkata",
+  "items": {
+    "extractor": "css",
+    "title": ".h2",
+    "subtitle": ".h2+p",
+    "leading": {
+      "top": "#cur-weather",
+      "bottom": ".bk-focus__info td"
+    },
+    "trailing": {
+      "top": "",
+      "bottom": ""
+    },
+    "thumbnail": "",
+    "notes": [
+      ".clear+p"
+    ],
+    "url": "",
+    "axis": {
+      "content": "",
+      "notes": ""
+    }
+  }
+
+}
