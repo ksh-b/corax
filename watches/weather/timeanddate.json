@@ -5,15 +5,15 @@
   "url": "https://www.timeanddate.com/weather/{country}/{city}",
   "items": {
     "extractor": "css",
-    "title": ".h2",
-    "subtitle": ".h2+p",
+    "title": ".bk-focus__info td",
+    "subtitle": "",
     "leading": {
-      "top": "#cur-weather",
-      "bottom": ".bk-focus__info td"
+      "top": ".h2",
+      "bottom": ""
     },
     "trailing": {
-      "top": "",
-      "bottom": ""
+      "top": "#cur-weather",
+      "bottom": ".h2+p"
     },
     "thumbnail": "",
     "notes": [
