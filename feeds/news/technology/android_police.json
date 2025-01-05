@@ -19,7 +19,7 @@
       "Newsletter"
     ]
   },
-  "category-url": "{home-page}/tag/{category}/{page}",
+  "category-url": "{home-page}/{category}/{page}",
   "supports-custom-category": true,
   "category-articles": {
     "extractor": "css",
