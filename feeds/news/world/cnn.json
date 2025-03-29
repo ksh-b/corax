@@ -82,6 +82,7 @@
       ],
       "category": "",
       "content": [
+        ".article__content-container",
         ".RichTextStoryBody",
         "#liveblog-body",
         ".VideoPage-pageSubHeading"
